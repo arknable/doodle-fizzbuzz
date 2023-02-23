@@ -30,7 +30,7 @@ func (p *Printer) WithStringer(fn Stringer) *Printer {
 func (p *Printer) Print() {
 	reversed := p.From > p.To
 	if reversed {
-		for i := p.From - 1; i <= p.To; i-- {
+		for i := p.From - 1; i >= p.To; i-- {
 			fmt.Fprintln(p.out, p.Stringify(i))
 		}
 		return

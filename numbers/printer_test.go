@@ -35,6 +35,12 @@ func TestPrinter(t *testing.T) {
 			expOutput: "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n",
 		},
 		{
+			name:      "10 to 5",
+			from:      10,
+			to:        5,
+			expOutput: "9\n8\n7\n6\n5\n",
+		},
+		{
 			name:      "5 to 22",
 			from:      5,
 			to:        22,
